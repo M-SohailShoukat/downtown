@@ -1,0 +1,1032 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Downtown Book Publishers | Book Marketing </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/downtown-fav.webp" type="image/png" sizes="">
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="releases/v6.0.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="npm/%40fancyapps/ui/dist/fancybox.css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <div id="custom-image"></div>
+    <div id="smooth-wrapper">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.htm">
+                        <img src="images/downtown-logo.png" alt="logo" class="img-fluid">
+                        <!--<h2>Logo <br><span class="log-st"> Here </span> </h2>-->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa-regular fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbarNav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.htm">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="javascript:;" class="nav-link">
+                                    Services <i class="fas fa-chevron-down" id="service-icon"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="book-writing.html">Book Writing</a></li>
+                                    <li><a class="dropdown-item" href="book-publishing.html">Book Publishing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="book-marketing.html">Book Marketing</a></li>
+                                    <li><a class="dropdown-item" href="book-editing.html">Book Editing</a></li>
+                                    <li><a class="dropdown-item" href="book-Printing.html">Book Printing</a></li>
+                                    <li><a class="dropdown-item" href="audio-book.html">Audio Book</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="custom_flex">
+                            <div class="custom-btn">
+                                <a href="tel:(123) 456-7890">
+                                    <i class="fa-solid fa-phone fa-fw"></i>
+                                    <span class="">(123) 456-7890</span>
+                                </a>
+                            </div>
+                            <div class="style-btn">
+                                <a href="javascript:;" data-fancybox="" data-src="#popupform">
+                                    GET A QUOTE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="smooth-content">
+            <style>
+                .footer {
+                    background-image: url(images/footer-bg.webp);
+                }
+            </style>
+
+            <!--card section-->
+            <style>
+                .portfolio .item:first-child .info-port {
+                    margin-bottom: 15px;
+                }
+
+                .portfolio .item .info-port {
+                    box-shadow: 0 5px 10px #00000063;
+                }
+
+                .info-text h2+p {
+                    font-size: 16px;
+                    max-width: 65%;
+                    margin: auto;
+                }
+
+            
+
+                .info-text {
+                    margin-bottom: 40px;
+                }
+
+                .portfolio .nav-tabs {
+                    border: none;
+                    justify-content: center;
+                    margin-bottom: 30px;
+                }
+
+
+                .portfolio .nav-tabs .nav-link.active {
+                    border: none;
+                    background: transparent;
+                    color: #fff;
+                }
+
+                .portfolio .nav-tabs .nav-link {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #fff;
+                    position: relative;
+                    padding: 20px 20px;
+                }
+
+
+                .portfolio::before {
+                    content: "";
+                    position: absolute;
+                    background: url('images/bg-portfolio-marketing.webp') no-repeat;
+                    max-width: 100%;
+                    width: 90%;
+                    background-size: 100%;
+                    /* height: 100%; */
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    z-index: -1;
+                }
+
+                .portfolio {
+                    padding: 100px 0 60px;
+                    position: relative;
+                }
+
+                .portfolio .info-text * {
+                    color: #fff;
+                }
+
+                .portfolio .info-text h2 {
+                    position: relative;
+                }
+
+                .portfolio .nav-tabs .nav-link::before {
+                    content: "";
+                    position: absolute;
+                    max-width: 100%;
+                    background: url('../images/bg-ul.webp') no-repeat;
+                    height: 100%;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 100%;
+                    background-position: 100%;
+                    background-size: 100%;
+                    opacity: 0;
+                    transition: .5s all;
+                }
+
+                .portfolio .nav-tabs .nav-link.active::before {
+                    opacity: 1;
+                }
+
+                .portfolio .info-text h2::before {
+                    background: #000000;
+                    width: 100px;
+                    height: 3px;
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    right: 0;
+                    bottom: -4px;
+                    margin: auto;
+                }
+
+                .cardssz {
+                    padding: 10px 95px;
+                }
+
+                .port-books {
+                    background: #fff;
+                    padding: 50px 50px 30px 35px;
+                    position: relative;
+                    z-index: 1;
+                    box-shadow: 0 5px 15px #00000026;
+                }
+
+                .mark-port .port-books {
+                    /*min-height: 359px;*/
+                    border-radius: 10px;
+                    /*max-height: 359px;*/
+                }
+
+                .port-books h4 {
+                    color: #24abce;
+                    font-weight: 700;
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+
+                .port-books h4+p {
+                    color: #4f4d4d;
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    /*min-height: 180px;*/
+                }
+
+                .port-books img {
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    max-width: 140px;
+                }
+
+                .portfolio .row:nth-child(2) {
+                    margin-bottom: 16px;
+                }
+
+                .port-lp .port-books {
+                    text-align: center;
+                }
+
+                .port-lp .port-books p {
+                    min-height: 112px;
+                }
+
+                .port-lp .port-books img {
+                    position: static;
+                    max-width: 100%;
+                    width: 230px;
+                    height: 96px;
+                    object-fit: contain;
+                }
+
+                .port-lp .port-books {
+                    text-align: center;
+                    padding: 50px 35px 30px 35px;
+                }
+
+                .book-promo-img img {
+                    max-width: 100%;
+                    border-radius: 30px;
+                }
+
+                .roi-sec {
+                    padding: 60px 0px;
+                }
+
+                .genres-st p {
+                    font-size: 15px;
+                }
+            </style>
+
+
+            <!-- banner sec  -->
+
+            <section class="book-marketing-st" style="background-image:url(images/book-marketing-4-ban.webp)">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5">
+                            <div class="marketing-4-st ">
+
+                                <h1>Elevate Your Book’s <span> Visibility and Reach the </span> Downtown Book Publishers
+                                    Style!</h1>
+                                <p>Our book marketing services are designed to promote your work effectively, helping
+                                    you connect with your target audience and maximize sales through strategic
+                                    campaigns.</p>
+                            </div>
+                            <div class="marketing-4-st-flex">
+                                <div class="custom-btn ">
+                                    <a href="tel:(123) 456-7890">
+                                        <i class="fa-solid fa-phone fa-fw"></i>
+                                        <span class="colorWhite">(123) 456-7890</span>
+                                    </a>
+                                </div>
+                                <div class="style-btn">
+                                    <a href="javascript:;" data-fancybox="" data-src="#popupform">
+                                        GET A QUOTE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                            <div class="look-img">
+                                <img src="images/looking-2.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- third sec  -->
+            <section class="roi-sec" style="background-image:url(images/texture-bg1.webp)">
+                <div class="container">
+                    <div class="row align-items-center gy-5">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="genres-st">
+                                <h3>Marketing Strategy Development</h3>
+                                <p>The efficient and effective data-driven approach brings effective book marketing
+                                    strategies. We help aspiring authors reach the right audience</p>
+                            </div>
+                            <div class="flex-st justify-content-start">
+                                <div class="custom-btn">
+                                    <a href="tel:(123) 456-7890">
+                                        <i class="fa-solid fa-phone fa-fw"></i>
+                                        <span class="">(123) 456-7890</span>
+                                    </a>
+                                </div>
+                                <div class="style-btn">
+                                    <a href="javascript:;" data-fancybox="" data-src="#popupform">
+                                        GET A QUOTE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 text-center">
+                            <div class="book-promo-img">
+                                <img src="images/3.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <!--------      -------->
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 text-center">
+                            <div class="book-promo-img">
+                                <img src="images/5.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="genres-st">
+                                <h3>Customized Marketing Plan to Reach Potential Audience</h3>
+                                <p>We as your Book Marketing partner will make sure that we promote your book on all
+                                    platforms where we can engage audience and bring in sales at the same time. We
+                                    devise customized marketing plans for all clients.</p>
+                            </div>
+                            <div class="flex-st justify-content-start">
+                                <div class="custom-btn">
+                                    <a href="tel:(123) 456-7890">
+                                        <i class="fa-solid fa-phone fa-fw"></i>
+                                        <span class="">(123) 456-7890</span>
+                                    </a>
+                                </div>
+                                <div class="style-btn">
+                                    <a href="javascript:;" data-fancybox="" data-src="#popupform">
+                                        GET A QUOTE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="genres-st">
+                                <h3>Return on Investment Analysis</h3>
+                                <p>Book marketing is a rich source of potential returns for any author when combined
+                                    with metrics and analytics. This ensures timely results and guaranteed profits. </p>
+                            </div>
+                            <div class="flex-st justify-content-start">
+                                <div class="custom-btn">
+                                    <a href="tel:(123) 456-7890">
+                                        <i class="fa-solid fa-phone fa-fw"></i>
+                                        <span class="">(123) 456-7890</span>
+                                    </a>
+                                </div>
+                                <div class="style-btn">
+                                    <a href="javascript:;" data-fancybox="" data-src="#popupform">
+                                        GET A QUOTE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 text-center">
+                            <div class="book-promo-img">
+                                <img src="images/7.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <!--------      -------->
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 text-center">
+                            <div class="book-promo-img">
+                                <img src="images/9.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="genres-st">
+                                <h3>Book Cover Design</h3>
+                                <p>We as professional team understand the importance of design and visual appearance of
+                                    the book. Therefore, we make sure that the content that is displayed in the book is
+                                    designed in such a way that offers everlasting impression on the audience. </p>
+                            </div>
+                            <div class="flex-st justify-content-start">
+                                <div class="custom-btn">
+                                    <a href="tel:(123) 456-7890">
+                                        <i class="fa-solid fa-phone fa-fw"></i>
+                                        <span class="">(123) 456-7890</span>
+                                    </a>
+                                </div>
+                                <div class="style-btn">
+                                    <a href="javascript:;" data-fancybox="" data-src="#popupform">
+                                        GET A QUOTE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- fifth sec  -->
+            <!--<section class="summer-sec book-writing-sec">-->
+            <!--    <div class="container pos-rel">-->
+            <!--        <div class="row">-->
+            <!--            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">-->
+            <!--                <div class="services-st">-->
+            <!--                    <h2>We Provide a Diverse Range of Marketing Services to Make Your Book Successful & Recognized</h2>-->
+            <!--                    <p>Book marketing helps in creating awareness and reaching the right -->
+            <!--                        audience. The actual goal of book marketing is to bring in sales and make -->
+            <!--                        the author bestseller. It helps book marketers to get your book in front of -->
+            <!--                        book distributors, bookstore buyers and other channels.</p>-->
+            <!--                </div>-->
+            <!--            </div>-->
+
+            <!--        </div>-->
+            <!--        <div class="row justify-content-center mt-5 summer-card-border align-items-center">-->
+            <!--            <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">-->
+            <!--                <div class="main" data-speed="1.2" data-lag="0">-->
+            <!--                    <div class="summer-card">-->
+            <!--                        <span>01</span>-->
+            <!--                        <div class="summer-st">-->
+            <!--                            <h6>01</h6>-->
+            <!--                            <h5>Initial Consultation</h5>-->
+            <!--                            <p>We meet with you to understand your book, target audience, and marketing goals to develop a tailored strategy.</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="summer-card mt-3">-->
+            <!--                        <span>04</span>-->
+            <!--                        <div class="summer-st">-->
+            <!--                            <h6>04</h6>-->
+            <!--                            <h5>Market Research</h5>-->
+            <!--                            <p>Our team conducts thorough research to identify trends, competitors, and the best channels for promoting your book.</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="summer-card mt-3">-->
+            <!--                        <span>05</span>-->
+            <!--                        <div class="summer-st">-->
+            <!--                            <h6>05</h6>-->
+            <!--                            <h5>Campaign Development </h5>-->
+            <!--                            <p>We create a comprehensive marketing plan, outlining specific tactics, timelines, and promotional materials needed for success.</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">-->
+            <!--                <div class="">-->
+            <!--                    <img src="images/home-1.webp" class="img-fluid" alt="">-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">-->
+            <!--                <div class="main" data-speed="1.1" data-lag="0">-->
+            <!--                    <div class="summer-card">-->
+            <!--                        <span>02</span>-->
+            <!--                        <div class="summer-st">-->
+            <!--                            <h6>02</h6>-->
+            <!--                            <h5>Content Creation</h5>-->
+            <!--                            <p>We develop engaging content, including social media posts, blog articles, and press releases, designed to attract and retain readers.</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="summer-card mt-3">-->
+            <!--                        <span>03</span>-->
+            <!--                        <div class="summer-st">-->
+            <!--                            <h6>03</h6>-->
+            <!--                            <h5>Campaign Launch</h5>-->
+            <!--                            <p>We implement the marketing plan, launching targeted campaigns across various channels to maximize reach and engagement.</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="summer-card mt-3">-->
+            <!--                        <span>06</span>-->
+            <!--                        <div class="summer-st">-->
+            <!--                            <h6>06</h6>-->
+            <!--                            <h5>Monitoring & Adjustments</h5>-->
+            <!--                            <p>We continuously monitor the campaign's performance, providing updates and making adjustments as needed to optimize results and achieve your goals.</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</section>-->
+            <section class="summer-sec book-writing-sec">
+                <div class="container pos-rel">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div class="services-st">
+                                <h2>Streamlined Publishing – From Manuscript to Marketplace: 4 Simple Steps!</h2>
+                                <p>Our process is designed to make publishing your book smooth and efficient!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-center mt-5 summer-card-border">
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div>
+                                <div class="summer-card">
+                                    <span>01</span>
+                                    <div class="summer-st">
+                                        <h6>01</h6>
+                                        <h5>Book Advertising</h5>
+                                        <p>To boost your book's sales and visibility, book advertising is essential.
+                                            Partnering with a marketing agency can help create and execute a targeted
+                                            advertising plan, ensuring your book reaches the right audience effectively.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="summer-card mt-3">
+                                    <span>03</span>
+                                    <div class="summer-st">
+                                        <h6>03</h6>
+                                        <h5>SEO & CONTENT MARKETING</h5>
+                                        <p>
+                                            Search engine optimization (SEO) is vital for boosting your book's
+                                            visibility. It optimizes your website to attract audiences with targeted
+                                            keywords. A marketing agency can implement effective SEO strategies to drive
+                                            traffic and increase sales, helping authors enhance their revenue.</p>
+                                    </div>
+                                </div>
+                                <!--<div class="summer-card mt-3">-->
+                                <!--    <span>05</span>-->
+                                <!--    <div class="summer-st">-->
+                                <!--        <h6>05</h6>-->
+                                <!--        <h5>Book Design & Formatting</h5>-->
+                                <!--        <p>We create a visually appealing design, inside and out, with custom cover designs and formatting for print and digital versions.</p>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="">
+                                <img src="images/home-1.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div>
+                                <div class="summer-card">
+                                    <span>02</span>
+                                    <div class="summer-st">
+                                        <h6>02</h6>
+                                        <h5>SOCIAL MEDIA MARKETING</h5>
+                                        <p>Social media is a powerful tool for authors to boost book visibility and
+                                            connect with their audience. An effective marketing strategy is essential
+                                            for success, and a book marketing agency can help increase awareness and
+                                            sales. Authors should focus on building a strong social media presence.</p>
+                                    </div>
+                                </div>
+                                <div class="summer-card mt-3">
+                                    <span>04</span>
+                                    <div class="summer-st">
+                                        <h6>04</h6>
+                                        <h5>PUBLIC RELATIONS</h5>
+                                        <p>A strong public relations strategy is an effective marketing approach for
+                                            increasing your book's presence and connecting with the right audience.
+                                            Partnering with a book marketing agency can help you develop a tailored PR
+                                            strategy to enhance your book's credibility and attract your target
+                                            audience.</p>
+                                    </div>
+                                </div>
+                                <!--<div class="summer-card mt-3">-->
+                                <!--    <span>06</span>-->
+                                <!--    <div class="summer-st">-->
+                                <!--        <h6>06</h6>-->
+                                <!--        <h5>Marketing & Promotion</h5>-->
+                                <!--        <p>We support your book launch with tailored marketing strategies to help you reach the right audience and maximize visibility.</p>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--card section-->
+            <section class="portfolio mark-port aos-init aos-animate" data-aos="fade-up" data-aos-duration="1400">
+                <div class="cardssz">
+                    <div class="container">
+                        <div class="info-text text-center">
+                            <h2>
+                                OUR BOOK MARKETING SERVICES WORK FOR ALL
+                            </h2>
+                            <p>
+                                When promoting your book, we do not leave any stone unturned to ensure you get the
+                                widespread exposure and ultimately sales.
+                            </p>
+                        </div>
+                        <div class="row gy-4">
+                            <div class="col-md-4 panel">
+                                <div class="port-books h-100">
+                                    <h4>
+                                        PROMOTIONAL ARTICLES AND BLOGS
+                                    </h4>
+                                    <p>
+                                        The effectiveness of Blogs and articles centered around your book should be
+                                        appreciated more. With that in mind, we dedicate our most educational and
+                                        ingenious writers to writing blogs and articles for your book.
+                                    </p>
+                                    <img src="https://mcmillanbookpublishing.com/assets/images/port-book1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 panel">
+                                <div class="port-books h-100">
+                                    <h4>
+                                        PRESS RELEASE
+                                    </h4>
+                                    <p>
+                                        Traditional release will always remain relevant. It is one of the most effective
+                                        ways to reach your target audience. Our marketing team publishes exclusive press
+                                        releases on all major platforms to get your book noticed.
+                                    </p>
+                                    <img src="https://mcmillanbookpublishing.com/assets/images/port-book2.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 panel">
+                                <div class="port-books h-100">
+                                    <h4>
+                                        VIDEO BOOK TRAILERS
+                                    </h4>
+                                    <p>
+                                        Why stop at the traditional when you can do more? Our marketing team has
+                                        passionate video makers specializing in making stellar trailers for your books.
+                                    </p>
+                                    <img src="https://mcmillanbookpublishing.com/assets/images/port-book3.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 panel">
+                                <div class="port-books h-100">
+                                    <h4>
+                                        SELL SHEETS
+                                    </h4>
+                                    <p>
+                                        As we said, we have it all. Even though it is innovative to use the newest
+                                        methods, sometimes staying simple works just fine. We design sell-sheets for
+                                        your book that talks to the reader base just like your book would.
+                                    </p>
+                                    <img src="https://mcmillanbookpublishing.com/assets/images/port-book4.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 panel">
+                                <div class="port-books h-100">
+                                    <h4>
+                                        PODCAST INTERVIEWS
+                                    </h4>
+                                    <p>
+                                        Authors garner mass reader’s attention when they interact with them. We will
+                                        arrange Podcast interviews for you to let your reader base know more about you
+                                        to increase reader author association.
+                                    </p>
+                                    <img src="https://mcmillanbookpublishing.com/assets/images/port-book5.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 panel">
+                                <div class="port-books h-100">
+                                    <h4>
+                                        AUTHOR WEBSITES
+                                    </h4>
+                                    <p>
+                                        An author’s website is an investment that keeps on giving. We have a team of
+                                        website developers who have worked on countless websites and have made sure that
+                                        the final product is such that attracts audience.
+                                    </p>
+                                    <img src="https://mcmillanbookpublishing.com/assets/images/port-book6.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="test8">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="test9">
+                                <h2>Ready to Start?</h2>
+                                <p>Call us at (123) 456-7890 or fill out the form below to start your journey toward
+                                    authorial success!</p>
+                            </div>
+                            <form class="test10" action="sendmail.php" method="POST">
+                                <div class="mb-3 test11">
+                                    <input type="name" class="form-control" name="full_name"
+                                        placeholder="Enter your name">
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3 test11">
+                                    <input type="text" class="form-control phoneNum" name="phone"
+                                        placeholder="Phone Number">
+                                </div>
+                                <div class="mb-3 test11">
+                                    <textarea class="form-control" name="message" placeholder="Enter message here"
+                                        rows="3"></textarea>
+                                </div>
+                                <div class="test12">
+                                    <!--hidden fields-->
+                                    <input type="hidden" name="lead_source"
+                                        value="downtownbookpublishers.com/book-marketing.php">
+                                    <input type="hidden" name="brand" value="downtownbookpublishers.com">
+                                    <input type="hidden" name="ip" value="">
+                                    <!-- extra  -->
+                                    <input type="text" name="msclkid" hidden="" value="">
+                                    <input type="text" name="gclid" hidden="" value="">
+                                    <!--hidden fields-->
+                                    <button type="submit" class="btn btn-primary">Submit Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lets-talk">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="txt">
+                                <h3>
+                                    Ready to Start<br>
+                                    Your
+                                    Journey ?
+                                </h3>
+                                <p>
+                                    Contact us now and <br>
+                                    get started Today !
+                                </p>
+                                <a href="tel:+1 (123) 456-7890">
+                                    <span>CALL US</span>
+                                    +1 (123) 456-7890 </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>
+                                Contact Now! Submit the form.
+                            </h3>
+                            <form action="/sendmail.php" method="POST" class="footer-form">
+                                <input type="text" class="required form-control" required="" name="full_name"
+                                    placeholder="Full Name*">
+                                <input type="email" class="required form-control" required="" name="email"
+                                    placeholder="Email Address*">
+                                <input type="text" class="form-control ftpn phoneNum" required="" name="phone"
+                                    placeholder="Phone Number*">
+                                <textarea autocomplete="nope" name="message" class="required form-control" required=""
+                                    placeholder="Enter Brief"></textarea>
+                                <!--hidden fields-->
+                                <input type="hidden" name="lead_source"
+                                    value="downtownbookpublishers.com/book-marketing.php">
+                                <input type="hidden" name="brand" value="downtownbookpublishers.com">
+                                <input type="hidden" name="ip" value="">
+                                <!-- extra  -->
+                                <input type="text" name="msclkid" hidden="" value="">
+                                <input type="text" name="gclid" hidden="" value="">
+                                <!--hidden fields-->
+                                <button type="submit" class="global_button">
+                                    <span>
+                                        Submit Request
+                                        <i class="fas fa-long-arrow-right" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mobile-none">
+                            <div class="img-footer">
+                                <img src="images/logo-white.webp">
+                            </div>
+                            <p>Ready to take the next step with your own story? Partner with Downtown Book Publishers
+                                and bring your book to life.</p>
+                        </div>
+                        <div class="col-md-2 mobile-none">
+                            <h4>Our Company</h4>
+                            <ul>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 mobile-none">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><a href="book-writing.html">Book Writing</a></li>
+                                <li><a href="book-publishing.html">Book Publishing</a></li>
+                                <li><a href="book-marketing.html">Book Marketing</a></li>
+                                <li><a href="book-editing.html">Book Editing</a></li>
+                                <li><a href="book-Printing.html">Book Printing</a></li>
+                                <li><a href="audio-book.html">Audio Book</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 pl-5">
+                            <h4>Talk to Us
+                                We’re Eager to Know</h4>
+                            <ul class="info">
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="tel:+1 (123) 456-7890">+1 (123) 456-7890</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="mailto:info@admin.com"><span>info@admin.com</span></a>
+                                </li>
+                                <li class="mt-3">
+                                    <img src="images/usa.png" alt="">
+                                    <p>
+                                        1400 Broadfield Blvd, suite#109 Houston, TX 77084
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    All Rights Reserved © 2024 Down Town Book Publishers.
+
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="text-center pl-extent">
+                                    <li><a href="terms.html">Terms &amp; Condition</a></li>
+                                    <li><a href="javascript:;">|</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <div style="display: none;" class="popupform" id="popupform">
+        <div class="modal-body">
+            <div class="popup-bann"><img src="images/popup-img.webp" alt=""></div>
+            <div class="popup-content">
+                <h2>Get Your <br> Quote Today !</h2>
+                <p>Providing you the perfect solution for your business needs. Let's work together and unlock doors to
+                    success.</p>
+                <form class="validate-popupform leadform lfcta" data-fid="1NAMFzswYBZCLpZtmQUgJa82g2G0NWEOmdYTVJzE">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="cn" class="required form-control" required="" name="name"
+                                placeholder="Your Name">
+                            <input type="email" id="em" class="required form-control" required="" name="email"
+                                placeholder="Your Email">
+                            <input type="text" id="pn" placeholder="Your Phone"
+                                class="required form-control ftpn phoneNum" required="" name="phone">
+                        </div>
+                        <div class="col-md-6">
+                            <textarea autocomplete="nope" name="message" class="form-control"
+                                placeholder="Enter a brief description about your book"></textarea>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="style-btn"> <button type="submit"
+                                    class="btn btn-black btn-black2  c_btn lfbtn">Submit Now</button> </div>
+                            <p class="success_msg lfmsg d-none">Your form has been submitted</p>
+                            <img src="assets/images/btn-img.webp" alt="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl-custom.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/ScrollSmoother.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/CustomEase.min.js"></script>
+    <script src="npm/%40fancyapps/ui%404.0/dist/fancybox.umd.js"></script>
+    <script src="s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <script>
+        $(".phoneNum").inputmask({
+            "mask": "(999) 999-9999"
+        }).on("input", function () {
+            var minLength = 10; // minimum length of the formatted phone number, including the country code
+            var phoneNumber = $(this).val().replace(/\D/g, ''); // remove non-digit characters from the input value
+            if (phoneNumber.length < minLength) {
+                this.setCustomValidity("Phone number must have a minimum length of " + minLength + " digits");
+            } else {
+                this.setCustomValidity("");
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var url = window.location.pathname;
+            var filename = url.substring(url.lastIndexOf('/') + 1);
+            if (filename == "") {
+                filename = "index.php"
+            }
+            $(`.nav-item .nav-link[href="${filename}"]`).addClass("active")
+        })
+    </script>
+
+
+    <script>
+        document.getElementsByTagName("body")[0].style.overflowX = "hidden";
+    </script>
+
+    <script>
+        $('#ProtfolioSlider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            speed: 3000,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                navText: [
+                    '<i class="fa-solid fa-left-long"></i>',
+                    '<i class="fa-solid fa-right-long"></i>'
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 2
+                    }
+                },
+                dotsContainer: '.custom-dots'
+            });
+
+
+        });
+    </script>
+
+    <script>
+        // Set the first tab and its content as active by default
+        const accordions = document.querySelectorAll(".accordion");
+
+        accordions.forEach((accordion, index) => {
+            const header = accordion.querySelector(".accordion__header");
+            const content = accordion.querySelector(".accordion__content");
+            const icon = accordion.querySelector(".accordion__icon i");
+
+            header.addEventListener("click", () => {
+                const isOpen = content.style.height === `${content.scrollHeight}px`;
+
+                accordions.forEach((a, i) => {
+                    const c = a.querySelector(".accordion__content");
+                    const ic = a.querySelector(".accordion__icon i");
+
+                    if (i === index) {
+                        c.style.height = isOpen ? "0px" : `${c.scrollHeight}px`;
+                        ic.classList.toggle("fa-plus", isOpen);
+                        ic.classList.toggle("fa-minus", !isOpen);
+                    } else {
+                        c.style.height = "0px";
+                        ic.classList.remove("fa-minus");
+                        ic.classList.add("fa-plus");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        const tilt = $('.js-tilt').tilt()
+        tilt.methods.destroy.call(tilt);
+    </script>
+
+</body>
+
+</html>
